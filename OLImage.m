@@ -56,7 +56,9 @@ inline static BOOL CGImageSourceGetFramesAndDurations(NSTimeInterval *finalDurat
         CGImageRef theImage = CGImageSourceCreateImageAtIndex(imageSource, i, NULL);
         [arrayToFill addObject:[UIImage imageWithCGImage:theImage]];
         CFRelease(theImage);
-        *finalDuration += frameDurations[i];
+        if (finalDuration) {
+            *finalDuration += frameDurations[i];
+        }
     }
     
     return evenFrameDuration;
@@ -147,20 +149,14 @@ inline static BOOL CGImageSourceGetFramesAndDurations(NSTimeInterval *finalDurat
         
         self.images = [NSMutableArray arrayWithCapacity:numberOfFrames];
         CGImageSourceGetFramesAndDurations(aFinalDuration, self.frameDurations, self.images, imageSource);
-        _totalDuration = *aFinalDuration;
-        
+        if (aFinalDuration) {
+            _totalDuration = *aFinalDuration;
+        }
+        CFRelease(imageSource);
         return self;
     }
     return nil;
     
-}
-
-- (CGSize)size
-{
-    if (images) {
-        return [[images objectAtIndex:0] size];
-    }
-    return [super size];
 }
 
 - (NSTimeInterval)duration {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161178BA166F79F60030BC03 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 161178B9166F79F60030BC03 /* Default-568h@2x.png */; };
 		5A053BE215F844060014BF82 /* BLEH.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5A053BE115F844060014BF82 /* BLEH.gif */; };
 		5A1F4BBD165C449E00B61FCF /* OLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F4BBA165C449E00B61FCF /* OLImage.m */; };
 		5A1F4BBE165C449E00B61FCF /* OLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F4BBC165C449E00B61FCF /* OLImageView.m */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161178B9166F79F60030BC03 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5A053BE115F844060014BF82 /* BLEH.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BLEH.gif; sourceTree = "<group>"; };
 		5A1F4BB9165C449E00B61FCF /* OLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLImage.h; sourceTree = SOURCE_ROOT; };
 		5A1F4BBA165C449E00B61FCF /* OLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLImage.m; sourceTree = SOURCE_ROOT; };
@@ -102,6 +104,7 @@
 		5A796CF215F79EC7008A8FBF = {
 			isa = PBXGroup;
 			children = (
+				161178B9166F79F60030BC03 /* Default-568h@2x.png */,
 				5A2FFAA615F800D500CEE5F6 /* QuartzCore.framework */,
 				5A796D4D15F7AEA7008A8FBF /* ImageIO.framework */,
 				5A796D4B15F7AE75008A8FBF /* MobileCoreServices.framework */,
@@ -249,6 +252,7 @@
 				5A2FFAA415F7F56100CEE5F6 /* notEven.gif in Resources */,
 				5A053BE215F844060014BF82 /* BLEH.gif in Resources */,
 				5A8D914215F844F80078E2B4 /* fdgdf.gif in Resources */,
+				161178BA166F79F60030BC03 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
